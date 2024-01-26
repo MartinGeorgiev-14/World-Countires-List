@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: rgb(137,91,230);
+    --second-color: rgb(88,28,185);
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+/* Styling of header start */
+
+header{
+    background-image: linear-gradient(0deg, rgba(137,91,230,0.21052170868347342) 100%, rgba(253,187,45,0) 100%),
+    url(/images/globe-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#header-titles h1{
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+}
+
+#total-number{
+    font-weight: bold;
+}
+
+#total-letters #letters-span{
+    color: rgb(255, 0 , 0);
+    font-style: italic;
+}
+
+#total-letters #letter-number{
+    color: rgb(0,255,0);
+}
+
+#header-buttons{
+    margin-bottom: 1rem;
+}
+
+#header-buttons button{
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.default-header-button, #arr-word-button{
+    background-color: var(--first-color);
+}
+
+.default-header-button:hover , #arr-word-button:hover{
+    background-color: var(--second-color);
+}
+
+.selected{
+    background-color: var(--second-color);
+}
+
+#search-bar{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+#search-bar input{
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    border: none;
+    outline-style: none;
+}
+
+#search-bar button{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    background: none;
+    border: none;
+    color: white;
+
+}
+
+/* Styling of header end */
+
+/* Styling of main start*/
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.country-square{
+    background-image: linear-gradient(0deg, rgba(137,91,230,0.21052170868347342) 100%, rgba(253,187,45,0) 100%), url(/images/map_image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15vw;
+    width: 15vw;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+/* Styling of main end*/
